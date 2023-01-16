@@ -18,5 +18,8 @@ driver.set_window_size(1920, 1080)
 size = driver.get_window_size()
 print(size)
 
-# close the web driver
+# close the  current window
 driver.close()
+
+# close the webdriver with all windows
+driver.quit()
