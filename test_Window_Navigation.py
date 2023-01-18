@@ -13,6 +13,7 @@ def test_1():
     #fetch the driver size and print
     size = driver.get_window_size()
     print("The current window size is",size)
+    driver.refresh()
     
 
 
