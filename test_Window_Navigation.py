@@ -13,7 +13,20 @@ def test_1():
     #fetch the driver size and print
     size = driver.get_window_size()
     print("The current window size is",size)
-    # close the  current window
-    #driver.close()
+    
 
 
+def test_2():
+    driver.get("https://www.godaddy.com/")
+    # print page title
+    print("The page title is :: ",driver.title)
+    #print current url
+    print(driver.current_url)
+    
+def test_3():
+    #Get Title of page and validate it with expected value.
+    assert "Domain Names, Websites, Hosting & Online Marketing Tools - GoDaddy IN" in driver.title
+    #Get url of page and validate it with expected value.
+    assert "https://www.godaddy.com/en-in" in driver.current_url
+    #Get page source of page and validate that title is present
+    assert driver.title in driver.page_source
