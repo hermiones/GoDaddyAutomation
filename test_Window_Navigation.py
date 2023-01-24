@@ -6,11 +6,11 @@ driver.get("https://www.godaddy.com/")
 def test_1():
     # Maximise the window size
     driver.maximize_window()
-    # Minimize the window size
+    # Minimize the window size 
     driver.minimize_window()
     # Set the window size to a perticular size
     driver.set_window_size(1920, 1080)
-    #fetch the driver size and print
+    #fetch the driver size and Print
     size = driver.get_window_size()
     print("The current window size is",size)
     driver.refresh()
