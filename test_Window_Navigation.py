@@ -8,8 +8,8 @@ def test_1():
     driver.maximize_window()
     # Minimize the window size 
     driver.minimize_window()
-    # Set the window size to a perticular size
-    driver.set_window_size(1920, 1080)
+    # Set the window size to a perticular Size
+    driver.set_window_size(1920, 1080) 
     #fetch the driver size and Print
     size = driver.get_window_size()
     print("The current window size is",size)
