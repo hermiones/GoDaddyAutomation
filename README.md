@@ -1,6 +1,6 @@
-This file contains Automation Testing scripts in Selenium+Python+Pytest
-The Assignment is present https://www.techlistic.com/2021/10/selenium-web-browser-automation.html
-We have solved the above assignement here , to run the code we need to do the below set up
+This file contains Automation Testing scripts in Selenium+Python+Pytest.
+The Assignment is present https://www.techlistic.com/2021/10/selenium-web-browser-automation.html .
+We have solved the above assignement here , to run the code we need to do the below set up.
 
 1. we need to install python verson 3.5+
 2. we need to install pip package
