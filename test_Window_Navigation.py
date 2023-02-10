@@ -32,4 +32,25 @@ def test_3():
     #Get page source of page and validate that title is present
     #assert driver.title in driver.page_source
 
-#def test_4():
+def test_4_MenuLinks():
+    driver.maximize_window
+    driver.implicitly_wait(10)
+    driver.find_element_by_css_selector("#id-d6f9deab-d554-45df-a52c-8a9ab53948b5").click()
+    driver.find_element_by_link_text("Domain Name Search").click()
+
+def test_5_AssertTitle():
+    if  ("GoDaddy Domain Search - Buy and Register Available Domain" in driver.title):
+        print("PASS")
+    else:
+        print("Fail")
+
+def test_6_Logo():
+    driver.find_element_by_xpath("//header/div[@id='id-c65f43b6-16f4-4542-bb27-3c6a84de0d93']/div[1]/a[1]/*[1]").click()
+
+def test_Final():
+    #verifies whether the element is present or not
+    search_box_display = driver.find_element_by_xpath("/html[1]/body[1]/section[2]/div[1]/form[1]/div[2]/span[1]/input[1]").is_displayed()
+    print(search_box_display)
+    #verifies whether the element is displayed or not
+    search_box_enable = driver.find_element_by_xpath("/html[1]/body[1]/section[2]/div[1]/form[1]/div[2]/span[1]/input[1]").is_enabled()
+    print(search_box_enable)
