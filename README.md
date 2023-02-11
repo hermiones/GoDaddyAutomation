@@ -25,5 +25,6 @@ Hardware Specificayion
 
 RAM -8GB
 SSD- 512 GB
+Processor-AMD RYZEN5
 
 
